@@ -15,7 +15,7 @@ if(!firabase.apps.length){
 export default class App extends Component() {
   render(){
   return (
-    <AppNavigator/>
+    <AppContainer/>
   );
   }
 }
@@ -24,4 +24,4 @@ const AppNavigator=createSwitchNavigator({
   Login:Login,
   Dashboard:Dashboard
 })
-const AppNavigator=createAppContainer(AppNavigator)
+const AppContainer=createAppContainer(AppNavigator)
